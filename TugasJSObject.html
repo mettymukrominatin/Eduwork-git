@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Object</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+       // Create an object
+       const person = {
+        firstName : "John",
+        lastName : "Doe",
+        peringat : function() {
+            return alert(this.firstName + " " + this.lastName);
+        }
+       };
+    person.peringat(); 
+    document.getElementById("demo").innerHTML = "check alert";
+    </script>
+</body>
+</html>
